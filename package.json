@@ -1,0 +1,52 @@
+{
+  "name": "npm-package-check",
+  "version": "1.0.0",
+  "description": "This is a tool to help check installed npm packages and even install and import them. It works like a charm!",
+  "keywords": [],
+  "homepage": "https://github.com/zppack/npm-package-check",
+  "bugs": {
+    "url": "https://github.com/zppack/npm-package-check/#issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zppack/npm-package-check.git"
+  },
+  "license": "MIT",
+  "author": "John Chan",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.ejs",
+  "bin": {},
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "",
+    "prepare": "npm run build",
+    "prebuild": "npm run clean",
+    "build": "babel src -d dist",
+    "release": "standard-version && npm publish --access public",
+    "postrelease": "git push && git push origin --tags",
+    "release:first": "standard-version --first-release && npm publish --access public",
+    "postrelease:first": "git push -u origin master && git push origin --tags",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@voxpelli/semver-set": "^3.0.0",
+    "import-global": "^0.1.0",
+    "latest-version": "^6.0.0",
+    "semver": "^7.3.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "rimraf": "^3.0.2",
+    "standard-version": "^9.1.1"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6"
+  }
+}
