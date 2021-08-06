@@ -1,5 +1,11 @@
 # npm-package-check
 
+[![npm package](https://img.shields.io/npm/v/npm-package-check.svg)](https://www.npmjs.org/package/npm-package-check)
+[![npm download](https://img.shields.io/npm/dt/npm-package-check.svg)](https://www.npmjs.org/package/npm-package-check)
+[![github license](https://img.shields.io/github/license/zppack/npm-package-check.svg)](https://github.com/zppack/npm-package-check/blob/master/LICENSE)
+
+[![NPM](https://nodei.co/npm/npm-package-check.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/npm-package-check)
+
 This is a tool to help check installed npm packages and even install and import them. It works like a charm!
 
 ## Features
