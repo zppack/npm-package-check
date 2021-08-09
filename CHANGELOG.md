@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/zppack/npm-package-check/compare/v1.0.2...v1.0.3) (2021-08-09)
+
+
+### Bug Fixes
+
+* change module type back to commonJs ([494374b](https://github.com/zppack/npm-package-check/commit/494374bcb78f0805a3de1604a22bd2d06fa720c8))
+
 ### [1.0.2](https://github.com/zppack/npm-package-check/compare/v1.0.1...v1.0.2) (2021-08-09)
 
 
