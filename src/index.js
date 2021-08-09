@@ -1,6 +1,6 @@
 import { execSync } from 'child_process';
 import validRange from 'semver/ranges/valid';
-import latestVersion from 'latest-version';
+import packageJson from 'package-json';
 import { semverIntersect } from '@voxpelli/semver-set';
 import importGlobal from 'import-global';
 
@@ -21,6 +21,11 @@ export const check = async (pkgName, { global = false, cwd = process.cwd() } = {
     return null;
   }
 };
+
+const latestVersion = async (packageName, options = {}) => {
+  const { version } = await packageJson(packageName.toLowerCase(), options);
+  return version;
+}
 
 const getWantVersion = async (pkgName, pkgVersion) => {
   if (pkgVersion === 'latest') {
