@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/zppack/npm-package-check/compare/v1.0.3...v1.0.4) (2023-04-23)
+
+
+### Bug Fixes
+
+* 修复安装参数 -S => --save ([3d9e7f6](https://github.com/zppack/npm-package-check/commit/3d9e7f654dedca0ba0875b90bb43157b9754323f))
+
 ### [1.0.3](https://github.com/zppack/npm-package-check/compare/v1.0.2...v1.0.3) (2021-08-09)
 
 
