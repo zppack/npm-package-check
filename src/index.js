@@ -51,9 +51,9 @@ export const checkVersion = async (pkgName, pkgVersion, { global = false, cwd = 
 };
 
 export const INSTALL_OPTS = {
-  global: '-g',
-  devDependence: '-D',
-  dependence: '-S',
+  global: '--global',
+  devDependence: '--save-dev',
+  dependence: '--save',
 };
 
 export const checkAndInstall = async (pkgName, { global = false, dev = false, cwd = process.cwd() } = {}) => {
